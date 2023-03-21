@@ -346,9 +346,9 @@ def compute_waypoints(mav):
         # defining the origin as the gps coordinates of the spawn point
         origin = [mav.gps.x, mav.gps.y, 0]
         
-        wp0 = [0, 0, 5]
-        wp1 = [3, 0, 5]
-        wp2 = [-3, 0, 5]
+        wp0 = [0, 0, 1]
+        wp1 = [2, 0, 1]
+        wp2 = [-2, 0, 1]
         # extracting latitude and longitude from given x,y,z coordinates 
         wp_g = [0]*3
         wp_g[0] = xy2latlon(wp0, origin)
